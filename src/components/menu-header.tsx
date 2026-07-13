@@ -1,3 +1,4 @@
+import {cn} from "@/lib/utils";
 import React from "react";
 
 const menuHeader = [
@@ -7,14 +8,26 @@ const menuHeader = [
   {name: "about us", href: "#about"},
 ];
 
-const MenuHeader = () => {
+interface MenuHeaderProps {
+  className?: string;
+}
+
+const MenuHeader = ({className}: MenuHeaderProps) => {
   return (
     <nav>
-      <ul className="flex items-center gap-20">
+      <ul
+        className={cn(
+          "flex flex-col gap-8 lg:flex-row items-center lg:gap-20",
+          className,
+        )}
+      >
         {menuHeader.map((item) => (
           <li key={item.name}>
             <a
-              className="text-[18px] text-blue-950 font-medium capitalize"
+              className={cn(
+                "text-[18px] text-teal-900 font-medium capitalize hover:text-orange-900 hover:font-bold",
+                "transition-all duration-300 ease-in-out",
+              )}
               href={item.href}
             >
               {item.name}
