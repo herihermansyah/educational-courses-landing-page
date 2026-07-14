@@ -52,7 +52,7 @@ const CategoryCoursesSection = () => {
         <SubHeader title="Courses Category" className="text-teal-900">
           <motion.p
             variants={cardVariants}
-            className="text-center text-gray-300 text-[20px] sm:w-180"
+            className="text-center text-gray-300 text-[20px] md:w-180"
           >
             Onlearing is one powerful online software suite that combines all
             the tools needed to run a successful school or office.
