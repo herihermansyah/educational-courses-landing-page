@@ -4,6 +4,7 @@ import WrapperMain from "../wrapper-main";
 import Image from "next/image";
 import Button from "../ui/button";
 import {Variants, motion} from "motion/react";
+import SubHeader from "../ui/sub-header";
 
 const coursesData = Array.from({length: 4}).map(() => ({
   title: "product management basic-courses",
@@ -60,13 +61,7 @@ const PopularCoursesCection = () => {
     >
       <WrapperMain className="flex flex-col gap-15">
         {/* title line and category */}
-        <div className="flex flex-col gap-10 items-center">
-          <motion.h2
-            // variants={floatingVariants(5, 1)}
-            className="capitalize font-bold text-[64px] leading-15.5 text-orange-900 text-center"
-          >
-            Popular courses
-          </motion.h2>
+        <SubHeader title="popular courses">
           <div className="flex items-center flex-wrap justify-center gap-6">
             {menuProgram.map((item, index) => (
               <motion.div variants={cardVariants} key={index}>
@@ -76,7 +71,7 @@ const PopularCoursesCection = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </SubHeader>
         {/* card course */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {coursesData.map((item, index) => (
