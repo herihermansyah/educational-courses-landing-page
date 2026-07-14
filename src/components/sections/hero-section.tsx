@@ -16,7 +16,7 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.1,
       delayChildren: 0.1,
     },
   },
@@ -63,11 +63,11 @@ const HeroSection = () => {
       initial="hidden"
       animate="visible"
       id="home"
-      className="bg-teal-100 pt-10 md:pt-30 relative overflow-hidden"
+      className="bg-teal-100 pt-10 md:pt-45 relative overflow-hidden"
     >
       <WrapperMain className="grid grid-cols-1 lg:grid-cols-2">
         {/* text hero */}
-        <motion.div className="flex flex-col gap-4 pb-5 md:pb-30 items-start relative z-20">
+        <motion.div className="flex flex-col gap-4 pb-5 md:pb-45 items-start relative z-20">
           <motion.span
             variants={itemVariants}
             className="bg-white text-[14px] p-2 rounded-lg font-medium text-teal-900"

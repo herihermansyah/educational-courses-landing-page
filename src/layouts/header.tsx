@@ -8,7 +8,13 @@ import {cn} from "@/lib/utils";
 import React from "react";
 import {HiMenuAlt3} from "react-icons/hi";
 import {MdCloseFullscreen} from "react-icons/md";
-import {AnimatePresence, motion, Variants} from "motion/react";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  Variants,
+} from "motion/react";
 
 // defining variants menu for animaiton
 const menuVariants: Variants = {
@@ -24,6 +30,7 @@ const menuVariants: Variants = {
       delayChildren: 0.2,
     },
   },
+
   closed: {
     y: "-100%",
     opacity: 0,
@@ -37,8 +44,23 @@ const menuVariants: Variants = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const {scrollY} = useScroll();
+  const [hidden, setHidden] = React.useState(false);
+
+  // animation scroll hidden header
+  useMotionValueEvent(scrollY, "change", (current) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (current > previous && current > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
   return (
-    <motion.div initial={{opacity: 0, y: 10}} animate={{opacity: 1, y: 0}}>
+    <motion.div
+      initial={{opacity: 0, y: 10}}
+      animate={{opacity: hidden ? 0 : 1, y: hidden ? -140 : 0}}
+    >
       <WrapperMain className="relative z-2">
         <div className="flex items-center justify-between bg-teal-100 py-5 px-10 rounded-2xl">
           <Logo />
@@ -55,13 +77,14 @@ const Header = () => {
               "bg-teal-100 w-full py-10",
               "rounded-2xl",
               "flex flex-col items-center gap-10",
-              "lg:static lg:w-auto lg:bg-transparent lg:translate-y-0 lg:py-0 lg:left-0 lg:translate-x-0 lg:z-0",
             )}
           >
             <MenuHeader />
             <UserControl className="lg:hidden" />
           </motion.div>
+          <MenuHeader className="hidden lg:flex" />
           <UserControl className="hidden lg:flex" />
+          {/* button hamburger menu */}
           <Button
             onClick={() => setIsOpen(!isOpen)}
             color="secondary"

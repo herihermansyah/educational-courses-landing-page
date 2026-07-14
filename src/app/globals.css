@@ -24,7 +24,7 @@
   --color-orange-900: #fd661f;
 
   /* custom shadow */
-  --shadow-dropdown: 0px 50px 80px 0px #000000;
+  --shadow-effect: 0px 20px 60px 0px rgba(38, 45, 118, 0.08);
 
   /* container */
   --container-main: 1200px;
