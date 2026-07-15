@@ -97,9 +97,8 @@ Make sure you have **Node.js** and **pnpm** installed on your machine.
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:herihermansyah/educational-courses-landing-page.git
 cd educational-courses-landing-page
-
 
 Install dependencies using pnpm:
 ```
