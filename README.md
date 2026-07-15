@@ -15,6 +15,14 @@ A modern, responsive, and visually stunning landing page for an educational plat
 <table width="100%">
   <tr>
     <td width="50%">
+      <p align="center"><b>Header</b></p>
+      <img src="./public/design/header.png" alt="Header" width="100%"/>
+    </td>
+     <td width="50%">
+      <p align="center"><b>Footer</b></p>
+      <img src="./public/design/footer.png" alt="Footer" width="100%"/>
+    </td>
+    <td width="50%">
       <p align="center"><b>Hero Section</b></p>
       <img src="./public/design/hero.png" alt="Hero Section" width="100%"/>
     </td>
@@ -84,13 +92,13 @@ Make sure you have **Node.js** and **pnpm** installed on your machine.
 
 Clone the repository:
 
-   ```bash
-   git clone <repository-url>
-   cd educational-courses-landing-page
+```bash
+git clone <repository-url>
+cd educational-courses-landing-page
 
 
-   Install dependencies using pnpm:
-   ```
+Install dependencies using pnpm:
+```
 
 Bash
 pnpm install
