@@ -1,3 +1,4 @@
+import BundlersCoursesSection from "@/components/sections/bundlers-courses-section";
 import CategoryCoursesSection from "@/components/sections/category-courses-section";
 import HeroSection from "@/components/sections/hero-section";
 import PopularCoursesCection from "@/components/sections/popular-courses-section";
@@ -13,6 +14,7 @@ const page = () => {
       <CategoryCoursesSection />
       <StudentBenefitSection />
       <StaffTrainingSection />
+      <BundlersCoursesSection />
     </div>
   );
 };
