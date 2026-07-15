@@ -119,6 +119,7 @@ const BundlersCoursesSection = () => {
   const middleIndex = Math.floor(bundlersFirst.length / 2);
   return (
     <motion.section
+      id="bundles"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -140,10 +141,11 @@ const BundlersCoursesSection = () => {
             <Swiper
               effect={"cards"}
               grabCursor={true}
+              loop={true}
               modules={[EffectCards, Mousewheel]}
               mousewheel={{forceToAxis: true}}
               initialSlide={middleIndex}
-              className="w-60 h-80 md:w-70 md:h-100"
+              className="w-47 h-80 sm:w-55 md:w-70 md:h-100"
             >
               {bundlersFirst.map((item, index) => (
                 <SwiperSlide
@@ -181,12 +183,13 @@ const BundlersCoursesSection = () => {
           {/* second card */}
           <motion.div variants={itemVariants}>
             <Swiper
+              loop={true}
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards, Mousewheel]}
               mousewheel={{forceToAxis: true}}
               initialSlide={middleIndex}
-              className="w-60 h-80 md:w-70 md:h-100"
+              className="w-47 h-80 sm:w-55 md:w-70 md:h-100"
             >
               {bundlersFirst.map((item, index) => (
                 <SwiperSlide
@@ -224,12 +227,13 @@ const BundlersCoursesSection = () => {
           {/* third card */}
           <motion.div variants={itemVariants}>
             <Swiper
+              loop={true}
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards, Mousewheel]}
               mousewheel={{forceToAxis: true}}
               initialSlide={middleIndex}
-              className="w-60 h-80 md:w-70 md:h-100"
+              className="w-47 h-80 sm:w-55 md:w-70 md:h-100"
             >
               {bundlersFirst.map((item, index) => (
                 <SwiperSlide

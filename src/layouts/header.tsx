@@ -77,6 +77,7 @@ const Header = () => {
               "bg-teal-100 w-full py-10",
               "rounded-2xl",
               "flex flex-col items-center gap-10",
+              "lg:hidden",
             )}
           >
             <MenuHeader />

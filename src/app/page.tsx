@@ -1,4 +1,4 @@
-import BundlersCoursesSection from "@/components/sections/bundlers-courses-section";
+import BundlersCoursesSection from "@/components/sections/bundles-courses-section";
 import CategoryCoursesSection from "@/components/sections/category-courses-section";
 import HeroSection from "@/components/sections/hero-section";
 import PopularCoursesCection from "@/components/sections/popular-courses-section";
@@ -8,7 +8,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-6 mb-50 flex flex-col gap-30">
+    <div className="mt-6 mb-15 flex flex-col gap-30">
       <HeroSection />
       <PopularCoursesCection />
       <CategoryCoursesSection />

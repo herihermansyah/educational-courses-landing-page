@@ -43,6 +43,7 @@ const cardVariants: Variants = {
 const CategoryCoursesSection = () => {
   return (
     <motion.section
+      id="courses"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

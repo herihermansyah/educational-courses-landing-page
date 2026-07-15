@@ -63,6 +63,7 @@ const benefitVariants: Variants = {
 const StudentBenefitSection = () => {
   return (
     <motion.section
+      id="benefit"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

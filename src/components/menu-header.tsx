@@ -3,9 +3,9 @@ import React from "react";
 
 const menuHeader = [
   {name: "home", href: "#home"},
-  {name: "careers", href: "#careers"},
-  {name: "blog", href: "#blog"},
-  {name: "about us", href: "#about"},
+  {name: "coureses", href: "#courses"},
+  {name: "benefit", href: "#benefit"},
+  {name: "bundles", href: "#bundles"},
 ];
 
 interface MenuHeaderProps {
