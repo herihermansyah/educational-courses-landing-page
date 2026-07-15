@@ -13,8 +13,8 @@ A modern, responsive, and visually stunning landing page for an educational plat
 ### Section Previews
 
 <table width="100%">
-  <tr>
-    <td width="50%">
+<tr>
+ <td width="50%">
       <p align="center"><b>Header</b></p>
       <img src="./public/design/header.png" alt="Header" width="100%"/>
     </td>
@@ -22,6 +22,8 @@ A modern, responsive, and visually stunning landing page for an educational plat
       <p align="center"><b>Footer</b></p>
       <img src="./public/design/footer.png" alt="Footer" width="100%"/>
     </td>
+</tr>
+  <tr>
     <td width="50%">
       <p align="center"><b>Hero Section</b></p>
       <img src="./public/design/hero.png" alt="Hero Section" width="100%"/>
@@ -31,6 +33,7 @@ A modern, responsive, and visually stunning landing page for an educational plat
       <img src="./public/design/category-courses.png" alt="Category Courses" width="100%"/>
     </td>
   </tr>
+  
   <tr>
     <td width="50%">
       <p align="center"><b>Benefits</b></p>
@@ -41,6 +44,7 @@ A modern, responsive, and visually stunning landing page for an educational plat
       <img src="./public/design/bundles.png" alt="Bundles Section" width="100%"/>
     </td>
   </tr>
+
   <tr>
     <td width="50%">
       <p align="center"><b>Popular Courses</b></p>
